@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #737373;
+  padding: 10px;
+}
+
+.logo {
+  width: 35%;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  flex-grow: 1;
+  overflow: auto;
+  color: black;
+}
+
+.sidebar {
+  background-color: #e8e8e8;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.main-content {
+  background-color: #fff;
+  padding: 20px;
+}
+
+a.active {
+  color: red;
+}
+
+.button {
+  background-color: #737373;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.loginSideButton {
+  background-color: #16a73f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.view {
+  background-color: #737373;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.change {
+  background-color: #e8e8e8;
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.backTo {
+  background-color: #e00c0c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+/* -- Travel page css -- */
+
+.travel-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+  gap: 20px; /* Space between grid items */
+  justify-items: center; /* Center items horizontally within their cells */
+}
+
+.travel-item {
+  text-align: center;
+}
+
+.travel-image {
+  width: 33wh; /* Adjust size as needed */
+  height: auto;
+  display: block;
+  margin: 10px 0; /* Adds space above and below the image */
+}
+
+/* -- Home page css */
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  grid-auto-rows: auto; /* Adjust row height automatically */
+  gap: 10px; /* Space between items */
+  background-color: #f3f3f3; /* Light grey background */
+  padding: 10px; /* Space around the grid */
+  border-radius: 10px; /* Rounded corners for the container */
+}
+
+.text-item {
+  grid-column: span 1; /* Each text block occupies one column */
+  background-color: f3f3f3; /* White background for text blocks */
+}
+
+.image-item {
+  grid-column: 2; /* Place the image in the second column */
+  grid-row: span 3; /* Let the image span multiple rows */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.home-image {
+  width: 100%; /* Make the image responsive */
+  max-width: 400px; /* Optional: Set a max width for the image */
+  height: auto;
+  border-radius: 10px; /* Rounded corners */
+}
+
+
+
